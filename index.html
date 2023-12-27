@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/tailwind.css">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body class="bg-gray-500">
+    <header>
+        <nav class="bg-gray-800 w-full h-12 md:h-14 fixed px-5 py-3 text-gray-100 flex items-center justify-end md:justify-between z-50">
+            <h1 class="font-bold text-xl hidden md:block">TensuraPanel</h1>
+            <div class="flex justify-between items-center gap-10">
+                <a href="#product" class="btnNav hover:scale-95 transition-all">
+                    <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" id="Layer" x="0" y="0" version="1.1" viewBox="0 0 29 29" xml:space="preserve"><path d="M25.022 19.609l-2.18-1.109-7.435 3.78c-.57.29-1.243.29-1.813 0L6.159 18.5l-2.18 1.109a1 1 0 0 0 0 1.783l9.615 4.889c.57.29 1.243.29 1.813 0l9.615-4.889a1 1 0 0 0 0-1.783z" fill="#e9e9e9" class="color000000 svgShape"></path><path d="M25.022 13.609l-2.18-1.109-7.435 3.78c-.57.29-1.243.29-1.813 0L6.159 12.5l-2.18 1.109a1 1 0 0 0 0 1.783l9.615 4.889c.57.29 1.243.29 1.813 0l9.615-4.889a1 1 0 0 0 0-1.783z" fill="#e9e9e9" class="color000000 svgShape"></path><path d="M13.594 2.72L3.978 7.609a1 1 0 0 0 0 1.783l9.615 4.889c.57.29 1.243.29 1.813 0l9.615-4.889a1 1 0 0 0 0-1.783L15.406 2.72a1.996 1.996 0 0 0-1.812 0z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                </a>
+                <a href="#contact" class="btnNav hover:scale-95 transition-all">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="Call"><path fill-rule="evenodd" d="M14.73 12.996c-.463 1.407-2.277 2.109-3.573 1.992-1.77-.16-3.696-1.099-5.158-2.133C3.85 11.335 1.837 8.984.664 6.489-.165 4.726-.351 2.558.882.951c.456-.594.95-.911 1.69-.948C3.6-.047 3.744.541 4.097 1.457c.263.685.614 1.384.81 2.094.367 1.325-.916 1.38-1.078 2.463-.1.683.727 1.599 1.101 2.086a10.105 10.105 0 0 0 2.608 2.403c.57.359 1.488 1.006 2.14.649 1.004-.55.91-2.243 2.313-1.67.727.296 1.431.723 2.125 1.097 1.073.577 1.023 1.175.614 2.417-.306.928.306-.928 0 0" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                </a>
+                <a href="#payment" class="btnNav hover:scale-95 transition-all">
+                    <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="payment"><path d="M27,7H5A2,2,0,0,0,3,9V23a2,2,0,0,0,2,2H27a2,2,0,0,0,2-2V9A2,2,0,0,0,27,7ZM11,22H7a1,1,0,0,1,0-2h4a1,1,0,0,1,0,2Zm1-7a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1Zm13,7H17a1,1,0,0,1,0-2h8a1,1,0,0,1,0,2Z" data-name="payment" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                </a>
+                <a href="#" class="hover:scale-95 transition-all">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="Login"><path d="M21,0H10A3.009,3.009,0,0,0,7,3V9h3a2.958,2.958,0,0,1,.88-2.12,3.061,3.061,0,0,1,4.24,0l3,3a3.031,3.031,0,0,1,0,4.24l-3,3a3.024,3.024,0,0,1-4.24,0A2.958,2.958,0,0,1,10,15H7v6a3.009,3.009,0,0,0,3,3H21a3.009,3.009,0,0,0,3-3V3A3.009,3.009,0,0,0,21,0Z" fill="#e9e9e9" class="color000000 svgShape"></path><path d="M13.59,13l-1.3,1.29a1.008,1.008,0,0,0,0,1.42,1.035,1.035,0,0,0,1.42,0l3-3a1.041,1.041,0,0,0,0-1.42l-3-3a1,1,0,0,0-1.42,1.42L13.59,11H1a1,1,0,0,0,0,2Z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="w-full h-screen bg-gray-800 text-gray-100 md:px-24 flex flex-col justify-evenly md:justify-center box-border">
+            <div class="flex justify-evenly items-center gap-10">
+                <img src="./src/assets/pterodactyl-logo.png" alt="pterodactyl-logo" class="w-2/4 max-w-96 hidden md:block">
+                <div class="p-2">
+                    <h2 class="font-bold text-5xl">Tensura Panel</h2>
+                    <h3 class="font-medium text-xl text-gray-400">Tempat sewa panel Murah dan Terpercaya seIndonesia.</h3>
+                </div>
+            </div>
+            <div class="keunggulan flex w-full justify-center items-center gap-3">
+                <div class="kanan flex w-full rounded-lg shadow-2xl transition-all p-3 flex items-center gap-3 max-w-72">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6.35 6.35" id="Time"><path fill-rule="evenodd" d="M12.004.998C5.94.998.996 5.935.996 11.998s4.945 11.006 11.008 11.006c6.063 0 10.998-4.943 10.998-11.006 0-6.063-4.935-11-10.998-11zm0 2a8.983 8.983 0 0 1 8.998 9 8.988 8.988 0 0 1-8.998 9.006 8.997 8.997 0 0 1-9.008-9.006c0-4.982 4.026-9 9.008-9zm-.016 1.986a1 1 0 0 0-.99 1.02v5.994a1 1 0 0 0 .297.707l4 4.002a1 1 0 1 0 1.41-1.418L13 11.584v-5.58a1 1 0 0 0-1.012-1.02z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" paint-order="stroke fill markers" transform="scale(.26458)" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;isolation:auto;mix-blend-mode:normal" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <div class="flex flex-col justify-between">
+                        <h4 class="font-semibold">24/7 Runtime</h4>
+                        <h4 class="font-light text-gray-300">24 Jam non stop!</h4>
+                    </div>
+                </div>
+                <div class="kiri flex w-full rounded-lg shadow-2xl transition-all p-3 items-center gap-3 max-w-72">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="Lightning"><rect width="256" height="256" fill="none"></rect><path d="M215.78857,118.16406a8.00125,8.00125,0,0,0-4.97949-5.6626L153.17871,90.89014l14.666-73.3291a8.00018,8.00018,0,0,0-13.69336-7.02735l-112,120a7.99995,7.99995,0,0,0,3.03955,12.94922l57.63037,21.61133-14.666,73.3291a7.99991,7.99991,0,0,0,13.69336,7.02734l112-120A8.00057,8.00057,0,0,0,215.78857,118.16406Z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <div class="flex flex-col justify-between">
+                        <h4 class="font-semibold">Fast & Secure</h4>
+                        <h4 class="font-light text-gray-300">Koneksi 1GBPs</h4>
+                    </div>
+                </div>
+                <div class="kanan flex w-full rounded-lg shadow-2xl transition-all p-3 items-center gap-3 max-w-72">
+                    <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="money"><path d="M16 17c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm0-14c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6z" fill="#e9e9e9" class="color000000 svgShape"></path><path d="M16.4 13.2h-.8a2.613 2.613 0 0 1-2.493-1.864 1 1 0 1 1 1.918-.565c.075.253.312.43.575.43h.8a.6.6 0 0 0 0-1.201h-.8C14.166 10 13 8.833 13 7.4s1.166-2.6 2.6-2.6h.8c1.121 0 2.111.714 2.466 1.778a1 1 0 1 1-1.897.633.598.598 0 0 0-.569-.411h-.8a.6.6 0 0 0 0 1.2h.8c1.434 0 2.6 1.167 2.6 2.6s-1.166 2.6-2.6 2.6z" fill="#e9e9e9" class="color000000 svgShape"></path><path d="M16 6c-.271 0-.521-.11-.71-.29-.04-.05-.09-.1-.12-.16a.556.556 0 0 1-.09-.17.672.672 0 0 1-.061-.18C15.01 5.13 15 5.07 15 5c0-.26.109-.52.29-.71.37-.37 1.04-.37 1.42 0 .18.19.29.45.29.71 0 .07-.01.13-.021.2a.606.606 0 0 1-.06.18.578.578 0 0 1-.09.17c-.04.06-.08.11-.12.16-.189.18-.449.29-.709.29zm0 8c-.271 0-.521-.11-.71-.29-.04-.05-.09-.1-.12-.16a.556.556 0 0 1-.09-.17.672.672 0 0 1-.061-.18c-.009-.07-.019-.13-.019-.2 0-.26.109-.52.29-.71.37-.37 1.04-.37 1.42 0 .18.19.29.45.29.71 0 .07-.01.13-.021.2a.606.606 0 0 1-.06.18.578.578 0 0 1-.09.17c-.04.06-.08.11-.12.16-.189.18-.449.29-.709.29zm2 17H2a1 1 0 0 1-1-1v-9c0-.265.105-.52.293-.707C1.527 20.058 3.653 18 6 18c1.944 0 4.452 1.469 5.295 2H16a3.004 3.004 0 0 1 2.955 3.519l7.891-3.288a2.995 2.995 0 0 1 2.818.273A2.993 2.993 0 0 1 31 23a1 1 0 0 1-.496.864l-12 7A1.003 1.003 0 0 1 18 31zM3 29h14.729l11.14-6.498a1.01 1.01 0 0 0-.314-.334.984.984 0 0 0-.939-.091l-9.23 3.846A1.007 1.007 0 0 1 18 26h-8a1 1 0 1 1 0-2h6a1.001 1.001 0 0 0 0-2h-5c-.197 0-.391-.059-.555-.167C9.68 21.323 7.387 20 6 20c-1.09 0-2.347.88-3 1.439V29z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <div class="flex flex-col justify-between">
+                        <h4 class="font-semibold">Cheap</h4>
+                        <h4 class="font-light text-gray-300">Harga ekonomis</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="product" class="bg-gray-700">
+            <header class="flex justify-center items-center text-gray-200 font-extrabold p-16">
+                <div class="bg-gray-600 px-6 py-4 rounded-lg shadow-xl">Our Products</div>
+            </header>
+            <main class="px-10 flex flex-wrap gap-10 justify-center pb-10">
+                <a href="#" class="awal1 w-52 h-screen max-h-48 bg-slate-700 shadow-2xl relative rounded-md hover:scale-95 transition-all">
+                    <div class="nomorProduk absolute top-0 left-0 z-10">
+                        <p class="font-extrabold text-gray-200">1</p>
+                    </div>
+                    <img class="w-full h-28 bg-gray-600 rounded-t-md" src="./src/assets/configure-your-pterodactyl-panel-smooth-and-seamless-setup.jpg" alt="configure-your-pterodactyl-panel-smooth-and-seamless-setup">
+                    <div class="p-2 flex flex-col justify-between h-16 box-content">
+                        <p class="font-bold text-gray-200">Panel BotWa</p>
+                        <div class="flex justify-between items-end">
+                            <span class="flex items-center gap-1">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Layer"><path d="m8.468 1038.379 5.3 3.893-1.228.903-4.072 2.99-5.299-3.893zm-4.352 5.753 4.074 2.994c.165.121.39.121.555 0l4.074-2.994.948.698-1.2.88c-.009.01-.018.013-.027.02l-.672.495-3.4 2.497-5.299-3.894.947-.696zm0 2.556h.001l4.073 2.994a.485.485 0 0 0 .262.092.487.487 0 0 0 .293-.092l4.074-2.992.948.698-5.299 3.892-5.299-3.894z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(-1.03 -1106.225) scale(1.06642)" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                                <p class="text-gray-300 font-extralight text-sm">Infinite</p>
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32" viewBox="0 0 32 32" id="coin"><path d="M16,31.5c8.54999,0,15.5-6.95001,15.5-15.5S24.54999,0.5,16,0.5S0.5,7.45001,0.5,16S7.45001,31.5,16,31.5z M18.09003,17.95996c-0.30005-0.29999-0.70001-0.45996-1.13-0.45996h-1.92004c-1.22998,0-2.38995-0.48004-3.25-1.34003c-0.85999-0.85999-1.33997-2.01996-1.33997-3.25c0-2.34998,1.77997-4.26001,4.04999-4.53998V7.70001c0-0.83002,0.66998-1.5,1.5-1.5s1.5,0.66998,1.5,1.5v0.62h2.54999c0.83002,0,1.5,0.66998,1.5,1.5c0,0.82996-0.66998,1.5-1.5,1.5h-5.01001c-0.88,0-1.58997,0.70996-1.58997,1.58997c0,0.42999,0.15997,0.83002,0.45996,1.13c0.30005,0.29999,0.70001,0.46002,1.13,0.46002h1.92004c1.22998,0,2.38995,0.47998,3.25,1.33997c0.85999,0.86005,1.33997,2.02002,1.33997,3.25c0,2.35004-1.77997,4.26001-4.04999,4.54004v0.66998c0,0.83002-0.66998,1.5-1.5,1.5s-1.5-0.66998-1.5-1.5v-0.62h-2.54999c-0.83002,0-1.5-0.66998-1.5-1.5s0.66998-1.5,1.5-1.5h5.01001c0.88,0,1.58997-0.71002,1.58997-1.59003C18.54999,18.65997,18.39001,18.26001,18.09003,17.95996z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                                <p class="text-gray-300 font-extralight text-sm">10,000</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="awal2 w-52 h-screen max-h-48 bg-slate-700 shadow-2xl relative rounded-md hover:scale-95 transition-all">
+                    <div class="nomorProduk absolute top-0 left-0 z-10">
+                        <p class="font-extrabold text-gray-700">2</p>
+                    </div>
+                    <img class="w-full h-28 bg-gray-600 rounded-t-md" src="./src/assets/autochat-header-web.jpg" alt="autochat-header-web">
+                    <div class="p-2 flex flex-col justify-between h-16 box-content">
+                        <p class="font-bold text-gray-200">Script Auto Share</p>
+                        <div class="flex justify-between items-end">
+                            <span class="flex items-center gap-1">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Layer"><path d="m8.468 1038.379 5.3 3.893-1.228.903-4.072 2.99-5.299-3.893zm-4.352 5.753 4.074 2.994c.165.121.39.121.555 0l4.074-2.994.948.698-1.2.88c-.009.01-.018.013-.027.02l-.672.495-3.4 2.497-5.299-3.894.947-.696zm0 2.556h.001l4.073 2.994a.485.485 0 0 0 .262.092.487.487 0 0 0 .293-.092l4.074-2.992.948.698-5.299 3.892-5.299-3.894z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" transform="translate(-1.03 -1106.225) scale(1.06642)" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                                <p class="text-gray-300 font-extralight text-sm">Infinite</p>
+                            </span>
+                            <span class="flex items-center gap-1">
+                                <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 32 32" viewBox="0 0 32 32" id="coin"><path d="M16,31.5c8.54999,0,15.5-6.95001,15.5-15.5S24.54999,0.5,16,0.5S0.5,7.45001,0.5,16S7.45001,31.5,16,31.5z M18.09003,17.95996c-0.30005-0.29999-0.70001-0.45996-1.13-0.45996h-1.92004c-1.22998,0-2.38995-0.48004-3.25-1.34003c-0.85999-0.85999-1.33997-2.01996-1.33997-3.25c0-2.34998,1.77997-4.26001,4.04999-4.53998V7.70001c0-0.83002,0.66998-1.5,1.5-1.5s1.5,0.66998,1.5,1.5v0.62h2.54999c0.83002,0,1.5,0.66998,1.5,1.5c0,0.82996-0.66998,1.5-1.5,1.5h-5.01001c-0.88,0-1.58997,0.70996-1.58997,1.58997c0,0.42999,0.15997,0.83002,0.45996,1.13c0.30005,0.29999,0.70001,0.46002,1.13,0.46002h1.92004c1.22998,0,2.38995,0.47998,3.25,1.33997c0.85999,0.86005,1.33997,2.02002,1.33997,3.25c0,2.35004-1.77997,4.26001-4.04999,4.54004v0.66998c0,0.83002-0.66998,1.5-1.5,1.5s-1.5-0.66998-1.5-1.5v-0.62h-2.54999c-0.83002,0-1.5-0.66998-1.5-1.5s0.66998-1.5,1.5-1.5h5.01001c0.88,0,1.58997-0.71002,1.58997-1.59003C18.54999,18.65997,18.39001,18.26001,18.09003,17.95996z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                                <p class="text-gray-300 font-extralight text-sm">10,000</p>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+            </main>
+        </section>
+        <section id="contact" class="bg-gray-700 p-16 flex items-center flex-col">
+            <header class="flex justify-center items-center text-gray-200 font-extrabold z-10">
+                <div class="bg-gray-600 px-6 py-4 rounded-lg shadow-xl">Contact Us</div>
+            </header>
+            <main class="mt-10 flex items-center gap-5 flex-wrap text-gray-200 justify-center">
+                <a href="#" class="awal1 w-52 h-12 bg-violet-700 flex gap-3 p-2 items-center shadow-xl rounded hover:scale-95 hover:bg-violet-900 transition-all">
+                    <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="Whatsapp"><path d="M8.002 0h-.004C3.587 0 0 3.588 0 8a7.94 7.94 0 0 0 1.523 4.689l-.997 2.972 3.075-.983A7.93 7.93 0 0 0 8.002 16C12.413 16 16 12.411 16 8s-3.587-8-7.998-8zm4.655 11.297c-.193.545-.959.997-1.57 1.129-.418.089-.964.16-2.802-.602-2.351-.974-3.865-3.363-3.983-3.518-.113-.155-.95-1.265-.95-2.413s.583-1.707.818-1.947c.193-.197.512-.287.818-.287.099 0 .188.005.268.009.235.01.353.024.508.395.193.465.663 1.613.719 1.731.057.118.114.278.034.433-.075.16-.141.231-.259.367-.118.136-.23.24-.348.386-.108.127-.23.263-.094.498.136.23.606.997 1.298 1.613.893.795 1.617 1.049 1.876 1.157.193.08.423.061.564-.089.179-.193.4-.513.625-.828.16-.226.362-.254.574-.174.216.075 1.359.64 1.594.757.235.118.39.174.447.273.056.099.056.564-.137 1.11z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <p class="font-semibold">WhatsApp Group</p>
+                </a>
+                <a href="#" class="awal2 w-52 h-12 bg-violet-700 flex gap-3 p-2 items-center shadow-xl rounded hover:scale-95 hover:bg-violet-900 transition-all">
+                    <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 100 100" viewBox="0 0 100 100" id="Discord"><path d="M85.778,24.561c-11.641-8.71-22.793-8.466-22.793-8.466s-1.14,1.302-1.14,1.302c13.839,4.152,20.27,10.257,20.27,10.257
+                        c-19.799-10.901-45.019-10.823-65.613,0c0,0,6.675-6.431,21.328-10.583c0,0-0.814-0.977-0.814-0.977s-11.071-0.244-22.793,8.466
+                        c0,0-11.722,21.084-11.722,47.052c0,0,6.838,11.722,24.829,12.292c0,0,3.012-3.582,5.454-6.675
+                        c-10.339-3.093-14.246-9.524-14.246-9.524c6.495,4.064,13.063,6.608,21.247,8.222c13.316,2.741,29.879-0.077,42.249-8.222
+                        c0,0-4.07,6.594-14.734,9.606c2.442,3.012,5.373,6.512,5.373,6.512C90.662,83.254,97.5,71.532,97.5,71.613
+                        C97.5,45.645,85.778,24.561,85.778,24.561z M34.818,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.333-11.892,16.357-11.855,16.607,0
+                        C43.121,60.054,39.458,64.043,34.818,64.043z M64.531,64.043c-4.559,0-8.303-3.989-8.303-8.955c0.366-11.869,16.19-11.874,16.607,0
+                        C72.834,60.054,69.171,64.043,64.531,64.043z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <p class="font-semibold">Discord Server</p>
+                </a>
+                <a href="#" class="awal1 w-52 h-12 bg-violet-700 flex gap-3 p-2 items-center shadow-xl rounded hover:scale-95 hover:bg-violet-900 transition-all">
+                    <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Telegram"><path d="M16.114 9.291c.552-.552 1.1-1.84-1.2-.276a395.806 395.806 0 0 1-6.489 4.372 2.7 2.7 0 0 1-2.117.046c-1.38-.414-2.991-.966-2.991-.966s-1.1-.691.783-1.427c0 0 7.961-3.267 10.722-4.418 1.058-.46 4.647-1.932 4.647-1.932s1.657-.645 1.519.92c-.046.644-.414 2.9-.782 5.338-.553 3.451-1.151 7.225-1.151 7.225s-.092 1.058-.874 1.242a3.787 3.787 0 0 1-2.3-.828c-.184-.138-3.451-2.209-4.648-3.221a.872.872 0 0 1 .046-1.473 169.31 169.31 0 0 0 4.835-4.602Z" fill="#e9e9e9" class="color000000 svgShape"></path></svg>
+                    <p class="font-semibold">Telegram Group</p>
+                </a>
+                <a href="#" class="awal2 w-52 h-12 bg-violet-700 flex gap-3 p-2 items-center shadow-xl rounded hover:scale-95 hover:bg-violet-900 transition-all">
+                    <svg width="35" height="30" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="instagram"><path fill="none" d="M401.7,91.9c-13.3,0-24.1,10.8-24.1,24.1c0,13.3,10.8,24.1,24.1,24.1c13.3,0,24.1-10.8,24.1-24.1
+                        C425.8,102.7,415,91.9,401.7,91.9z"></path><circle cx="256" cy="256" r="113" fill="none"></circle><path fill="#e9e9e9" d="M399.5,19.5h-287C59.2,19.5,16,62.7,16,116v280c0,53.3,43.2,96.5,96.5,96.5h287c53.3,0,96.5-43.2,96.5-96.5
+                        V116C496,62.7,452.8,19.5,399.5,19.5z M256,369c-62.4,0-113-50.6-113-113s50.6-113,113-113s113,50.6,113,113S318.4,369,256,369z
+                         M401.7,140.1c-13.3,0-24.1-10.8-24.1-24.1c0-13.3,10.8-24.1,24.1-24.1c13.3,0,24.1,10.8,24.1,24.1
+                        C425.8,129.3,415,140.1,401.7,140.1z" class="color020202 svgShape"></path></svg>
+                    <p class="font-semibold">Instagram</p>
+                </a>
+            </main>
+        </section>
+        <section id="payment" class="flex justify-center p-10">
+            <div class="w-screen p-5 flex flex-col gap-5 bg-gray-600 text-gray-300 rounded shadow-2xl">
+                <p class="font-bold">Payments</p>
+                <span class="flex items-center gap-5 flex-wrap justify-center">
+                    <img src="./src/assets/dana.png" alt="logo dana" class="grayscale w-20 h-20">
+                    <img src="./src/assets/gopay-integration.png" alt="logo dana" class="grayscale w-20 h-20">
+                    <img src="./src/assets/qris.png" alt="logo dana" class="invert w-28 h-16">
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full bg-gray-600 p-10">
+        <h6 class="text-center font-semibold text-sm text-gray-200">&copy;Copyright 2023 - Tensura Community</h6>
+    </footer>
+    <script src="./src/script.js"></script>
+</body>
+</html>
